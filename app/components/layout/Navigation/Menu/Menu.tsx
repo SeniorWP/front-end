@@ -1,9 +1,9 @@
 import { RoutesEnum } from 'constants/routes'
 import { FC } from 'react'
 import {
-	MdOutlineFavoriteBorder,
-	MdOutlineHome,
-	MdOutlineMessage,
+	MdOutlineFavorite,
+	MdHome,
+	MdMessage,
 } from 'react-icons/md'
 
 import styles from './Menu.module.scss'
@@ -13,17 +13,17 @@ import { IMenuItem } from './types'
 const Menu: FC = () => {
 	const items: IMenuItem[] = [
 		{
-			icon: <MdOutlineHome size={28} />,
+			icon: <MdHome size={28} />,
 			link: RoutesEnum.Home,
 			title: 'Home',
 		},
 		{
-			icon: <MdOutlineMessage size={28} />,
+			icon: <MdMessage size={28} />,
 			link: RoutesEnum.Message,
 			title: 'Message',
 		},
 		{
-			icon: <MdOutlineFavoriteBorder size={28} />,
+			icon: <MdOutlineFavorite size={28} />,
 			link: RoutesEnum.Favourites,
 			title: 'Favorites',
 		},

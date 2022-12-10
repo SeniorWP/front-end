@@ -1,23 +1,21 @@
 .search {
 	border-radius: 8px;
-	border: 1px solid var(--secondary);
 	padding: 8px 4px;
 	display: flex;
 	align-items: center;
-	transition: background-color 0.5s ease;
+	border: 1px solid var(--color-primary);
 	width: 300px;
+	color: var(--color-primary);
 
 	> svg {
 		margin-right: 8px;
 		font-size: 36px;
-		fill: var(--secondary);
-		transition: background-color 0.5s ease;
-		transition: background-color 1000ms linear;
+		fill: var(--color-primary);
 	}
 
 	> input {
 		border: none;
-		color: var(--primary);
+		color: var(--color-primary);
 		display: blick;
 		width: 100%;
 		background: transparent;
@@ -25,12 +23,13 @@
 	}
 
 	&:focus-within {
-		border-color: var(--primary);
+		border: 1px solid var(--color-dark-primary);
+		border-color: var(--color-dark-primary);
 		::-webkit-input-placeholder {
-			color:    var(--primary);
+			color:    var(--color-dark-primary);
 		 }
 		> svg {
-			fill: var(--primary);
+			fill: var(--color-dark-primary);
 		}
 	}
 }
